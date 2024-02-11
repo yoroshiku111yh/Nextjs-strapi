@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply text-base text-light-white-f uppercase bg-light-yellow-b8 font-bold px-4 py-4 inline-block text-center;
+  }
+  .btn-border{
+    @apply text-base text-light-yellow-b8 uppercase border-light-yellow-b8 border-[1px] bg-none font-bold px-4 py-4 inline-block text-center;
+  }
+  .headline-common{
+    @apply text-[32px] text-light-gray-3 uppercase text-center block font-bold leading-normal;
+  }
+  .headline-common-desc{
+    @apply text-xl text-center text-light-gray-6 leading-snug pt-1
+  }
+  .tag-circle{
+    @apply rounded-full w-[48px] h-[48px] aspect-square font-medium text-base text-light-white-f flex items-center justify-center;
+  }
+}

@@ -1,0 +1,32 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .card-product{
+        @apply relative overflow-hidden bg-light-gray-f4 rounded-md;
+    }
+    .card-product__thumb {
+        @apply overflow-hidden relative aspect-[285/301]
+    }
+    .card-product__thumb img{
+        @apply object-cover w-full h-full relative z-0;
+    }
+    .card-product__thumb-mask {
+        @apply absolute z-[1] top-0 left-0 right-0 bottom-0 bg-none flex justify-end items-start pt-4 pr-4;
+    }
+    .card-product__content {
+        @apply px-3 py-4;
+    }
+    .card-product__title {
+        @apply font-semibold text-2xl text-light-gray-3a leading-snug;
+    }
+    .card-product__desc{
+        @apply font-medium text-light-gray-89 text-base leading-snug;
+    }
+    .card-product__discount {
+        @apply text-light-gray-b0 text-base line-through;
+    }
+    .card-product__price{
+        @apply text-light-gray-3a text-xl;
+    }
+}
